@@ -35,21 +35,17 @@ public class TwoIntegers
 		int dif = one - two;
 		int mult = one * two;
 		double div = (double) one / two;		
-		return "Sum:" + sum + " Difference:" + dif + " Multiplication:" + mult + " Division:" + div;
+		return one + " + " + two + " = " + sum + ", " + one + " - " + two + " = " + dif + ", " + one + " * " + two + " = " + mult + ", " + one + " / " + two + " = " + div;
 	}
-	public String Larger()
+	public int larger()
 	{
 		if(one > two)
 		{
-			return one + " > " + two;
-		}
-		else if (one < two)
-		{
-			return one + " < " + two;
+			return one;
 		}
 		else
 		{
-			return one + " = " + two;
+			return two;
 		}
 	}
 	public boolean isEven()	
